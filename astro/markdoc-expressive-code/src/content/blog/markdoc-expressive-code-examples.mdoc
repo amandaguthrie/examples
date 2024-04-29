@@ -1,0 +1,27 @@
+---
+title: 'Markdoc Expressive Code Examples'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+---
+
+**Render a code block with a file name as a code comment (Expressive Code functionality)**
+```astro
+// src/components/Paragraph.astro
+---
+---
+<p><slot /></p>
+```
+
+**Render a code block with a Markdoc title attribute**
+```astro {\% title="My Title" %}
+---
+---
+<p><slot /></p>
+```
+
+**Render a frame as a terminal frame instead of a code frame with Markdoc frame attribute**
+```astro {\% frame="terminal" %}
+---
+---
+<p><slot /></p>
+```
